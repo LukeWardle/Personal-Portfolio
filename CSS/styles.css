@@ -1,0 +1,10 @@
+
+:root {
+    --about-background: linear-gradient(45deg, #d53369 0%, #daae51 100%);
+    --portfolio-background: linear-gradient(225deg, #d53369 0%, #daae51 100%);
+}
+
+html {
+    width: 100%;
+}
+
