@@ -8,3 +8,100 @@ html {
     width: 100%;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+nav .menu {
+    display: block;
+}
+
+nav .menu li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav .menu li a:hover {
+    font-size: 30px;
+}
+
+nav .social {
+    display: block;
+    padding-right: 20px;
+}
+
+nav .social a {
+    padding: 1rem;
+}
+
+nav .social img:hover {
+    transform: scale(1.2);
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    nav {
+      height: 60px;
+    }
+    
+    nav .menu li {
+      font-size: 15px;
+    }
+    
+    nav .menu li a {
+      padding: 0.2rem;
+    }
+    
+    nav .social a {
+      padding: 0.2rem;
+    }
+
+    nav .social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav .menu li a:hover {
+        font-size: 20px;
+    }
+
+}
+  
+  /* Media query for screens between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+      height: 80px;
+    }
+    
+    nav .menu li {
+      font-size: 25px;
+    }
+    
+    nav .menu li a {
+      padding: 0.5rem;
+    }
+    
+    nav .social a {
+      padding: 1rem;
+    }
+}
