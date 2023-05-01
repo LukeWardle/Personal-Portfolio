@@ -1,107 +1,149 @@
-
-:root {
-    --about-background: linear-gradient(45deg, #d53369 0%, #daae51 100%);
-    --portfolio-background: linear-gradient(225deg, #d53369 0%, #daae51 100%);
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-    width: 100%;
-}
-
+/* Apply styles to the body */
 body {
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
+/* Apply styles to the header */
+header {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  border-radius: 1px;
+  transition: all 0.2s;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 1px;
+  transition: all 0.2s;
+}
+
+.navbar-toggler-icon::before {
+  transform: translateY(-6px);
+}
+
+.navbar-toggler-icon::after {
+  transform: translateY(3px);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+/* Apply styles to the navigation menu */
 nav {
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
 }
 
-nav .menu {
-    display: block;
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
 
-nav .menu li {
-    display: inline-block;
-    font-size: 25px;
+nav ul li {
+  margin-bottom: 1rem;
 }
 
-nav .menu li a {
-    color: white;
-    text-decoration: none;
-    justify-content: space-between;
-    padding: 2rem;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav .menu li a:hover {
-    font-size: 30px;
+nav ul li a:hover {
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
 }
 
-nav .social {
-    display: block;
-    padding-right: 20px;
+nav.active {
+  left: 0;
 }
 
-nav .social a {
-    padding: 1rem;
+
+#landing-image {
+  background-image: url(../Images/softwarecode.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30%;
+  position: relative;
+  opacity: 0.9;
 }
 
-nav .social img:hover {
-    transform: scale(1.2);
+.landing-text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-/* Media query for screens smaller than 768px */
-@media screen and (max-width: 767px) {
-    nav {
-      height: 60px;
-    }
-    
-    nav .menu li {
-      font-size: 15px;
-    }
-    
-    nav .menu li a {
-      padding: 0.2rem;
-    }
-    
-    nav .social a {
-      padding: 0.2rem;
-    }
-
-    nav .social img {
-        width: 20px;
-        height: 20px;
-    }
-
-    nav .menu li a:hover {
-        font-size: 20px;
-    }
-
+.landing-text h1 {
+  font-size: 3em;
 }
-  
-  /* Media query for screens between 768px and 1024px */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    nav {
-      height: 80px;
-    }
-    
-    nav .menu li {
-      font-size: 25px;
-    }
-    
-    nav .menu li a {
-      padding: 0.5rem;
-    }
-    
-    nav .social a {
-      padding: 1rem;
-    }
+
+.landing-text p {
+  font-size: 1.5em;
+}
+
+/* Apply styles to the footer */
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }

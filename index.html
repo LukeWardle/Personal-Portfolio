@@ -2,49 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luke Wardle: Personal Portfolio</title>
     <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="stylesheet" href="path/to/bootstrap.css">
-    <title>Home Page</title>
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Home Page</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="social">
-            <a href="#" target="_blank" id="github">
-                <img src="./Images/icons8-github-48.png" alt="Github" />
-            </a>
-            <a href="#" target="_blank" id="linkedin">
-                <img src="./Images/icons8-linkedin-48.png" alt="Linkedin" />
-            </a>
-            <a href="#" target="_blank" id="twitter">
-                <img src="./Images/icons8-twitter-48.png" alt="Twitter" />
-            </a>
-        </div>
-    </nav>
-
-    <!-- Title banner section -->
-    <div class="landingimage-container">
-        <h1>Welcome <br>To lukewardle.co.uk</h1>
-        <h3>Junior Software Developer, Crewe</h3>
-    </div>
-
-    <!--About me Section-->
-    <div class="aboutme-container">
-        <img>
-        <section></section>
-        <!--social media tags and links below-->
-    </div>
-
-    <!--Footer Section-->
-    <div class="footer-container">
-
-    </div>
-    
+    <header>
+        <h1>Luke Wardle</h1>
+        <button id="menu-btn" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.pdf" download>Download CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="landing-image">
+            <div class="landing-text">
+              <h1>Welcome To My Personal Profile</h1>
+              <p>Here's where you can learn more about me and my work.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © Luke Wardle</p>
+    </footer>
+    <script src="./Javascript/script.js"></script>
 </body>
 </html>
