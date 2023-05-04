@@ -148,12 +148,39 @@ footer {
   text-align: center;
 }
 
+.backgroundcolorcontainer {
+  background-color: rgb(43, 42, 42);
+  margin: 0;
+}
+
 /* About page styles */
-.about {
+.polygramcontainerright {
   width: 100%;
-  height: 500px;
+  height: 600px;
   background: linear-gradient(to bottom right, #ff8a00, #e52e71);
   clip-path: polygon(0 14%, 100% 0%, 100% 71%, 0 81%);
   padding: 50px;
   text-align: center;
+  margin-bottom: 100px;
+}
+
+.polygramcontainerleft {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to bottom right, #ff8a00, #e52e71);
+  clip-path: polygon(100% 14%, 0 0%, 0 71%, 100% 81%);
+  padding: 50px;
+  text-align: center;
+}
+
+.formpagedescriptioncontainer {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(43, 42, 42);
+}
+
+.formcontainer {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom right, #ff8a00, #e52e71);
 }
