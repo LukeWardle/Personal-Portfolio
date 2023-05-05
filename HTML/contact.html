@@ -27,8 +27,27 @@
 
         </div>
         <div class="formcontainer">
-            <!-- Form script to go here -->
-            
+            <form id="contactform" action="/submit" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required aria-label="Name" />
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required aria-label="Email" />
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" minlength=10 required aria-label="Message"></textarea>
+                    <p class="form-hint">Please provide details about your inquiry, including any relevant information that will help us respond to your message more effectively.</p>
+                </div>
+                
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
